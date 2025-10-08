@@ -111,13 +111,13 @@ label[for="nascimento"] {
 }
 
 #telefone {
-    top: 180px;
-    right: 200px;
+    top: 80px;
+    right: 800px;
 }
 
 label[for="telefone"] {
-    top: 150px;
-    right: 190px;
+    top: 50px;
+    right: 800px;
 }
 
 #comida {
@@ -142,7 +142,7 @@ label[for="animal"] {
 }
 
 #avo {
-    bottom: 120px;
+    bottom: 115px;
     right: 300px;
 }
 
@@ -151,8 +151,15 @@ label[for="avo"] {
     right: 290px;
 }
 
-#tio { top: 60px; right: 450px; }
-label[for="tio"] { top: 40px; right: 440px; }
+#tio {
+    top: 630px;
+    right: 500px;
+}
+
+label[for="tio"] {
+    top: 600px;
+    right: 440px;
+}
 
 #bicho {
     top: 400px;
