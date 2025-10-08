@@ -151,15 +151,8 @@ label[for="avo"] {
     right: 290px;
 }
 
-#tio {
-    top: 60px;
-    right: 450px;
-}
-
-label[for="tio"] {
-    top: 40px;
-    right: 440px;
-}
+#tio { top: 60px; right: 450px; }
+label[for="tio"] { top: 40px; right: 440px; }
 
 #bicho {
     top: 400px;
