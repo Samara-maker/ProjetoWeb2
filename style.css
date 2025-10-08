@@ -6,6 +6,7 @@ body {
     height: 100vh;
     width: 100vw;
     position: relative;
+    margin: 0;
 }
 
 /* títulos tortos e grandes */
@@ -104,11 +105,6 @@ label[for="sobrenome"] {
     right: 140px;
 }
 
-#nascimento {
-    top: 330px;
-    left: 300px;
-}
-
 label[for="nascimento"] {
     top: 300px;
     left: 290px;
@@ -125,12 +121,12 @@ label[for="telefone"] {
 }
 
 #comida {
-    bottom: 200px;
+    bottom: 150px;
     left: 120px;
 }
 
 label[for="comida"] {
-    bottom: 240px;
+    bottom: 170px;
     left: 110px;
 }
 
@@ -156,7 +152,7 @@ label[for="avo"] {
 }
 
 #tio {
-    top: 70px;
+    top: 60px;
     right: 450px;
 }
 
@@ -176,24 +172,24 @@ label[for="bicho"] {
 }
 
 #magenta {
-    bottom: 90px;
+    bottom: 50px;
     left: 200px;
     width: 330px;
 }
 
 label[for="magenta"] {
-    bottom: 110px;
+    bottom: 80px;
     left: 190px;
 }
 
 #extraterrestre {
-    top: 520px;
+    top: 570px;
     left: 100px;
     width: 370px;
 }
 
 label[for="extraterrestre"] {
-    top: 500px;
+    top: 550px;
     left: 90px;
 }
 
@@ -219,9 +215,12 @@ label[for="preta"] {
     right: 410px;
 }
 
-
+/* Date picker giratório posicionado abaixo do label nascimento */
 .date-picker {
-    position: relative;
+    position: absolute;
+    top: 335px;
+    /* 35px abaixo do label */
+    left: 290px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -233,6 +232,7 @@ label[for="preta"] {
     color: #fff;
     font-weight: bold;
     user-select: none;
+    z-index: 10;
 }
 
 .date-dot {
@@ -250,4 +250,5 @@ label[for="preta"] {
 .date-text {
     position: absolute;
     font-size: 18px;
+    user-select: none;
 }
