@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário Bagunçado</title>
+<style>
+  body {
+    background: #f2f2f2;
+    font-family: monospace;
+    color: #111;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+
+  h1 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    transform: rotate(-12deg);
+    font-size: 70px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    transform: rotate(15deg);
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+
+  label, input {
+    position: absolute;
+    display: block;
+  }
+
+  label {
+    background: #ddd;
+    padding: 2px 6px;
+    font-weight: bold;
+    transform: rotate(calc(-10deg + 20deg * var(--r)));
+  }
+
+  input {
+    border: 2px solid #000;
+    background: #fff;
+    padding: 3px;
+  }
+
+  /* tamanhos aleatórios */
+  .xs { font-size: 10px; }
+  .sm { font-size: 13px; }
+  .md { font-size: 16px; }
+  .lg { font-size: 22px; }
+  .xl { font-size: 30px; }
+  .xxl { font-size: 40px; }
+
+  button {
+    position: absolute;
+    bottom: 20px;
+    left: 42%;
+    padding: 12px 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* POSIÇÕES BRUTAS E SEM LÓGICA */
+  #nome { top: 110px; left: 80px; }
+  label[for="nome"] { top: 80px; left: 70px; }
+
+  #sobrenome { bottom: 200px; right: 150px; }
+  label[for="sobrenome"] { bottom: 230px; right: 140px; }
+
+  #nascimento { top: 330px; left: 300px; }
+  label[for="nascimento"] { top: 300px; left: 290px; }
+
+  #telefone { top: 180px; right: 200px; }
+  label[for="telefone"] { top: 150px; right: 190px; }
+
+  #comida { bottom: 200px; left: 120px; }
+  label[for="comida"] { bottom: 240px; left: 110px; }
+
+  #animal { top: 490px; left: 540px; width: 340px; }
+  label[for="animal"] { top: 440px; left: 530px; }
+
+  #avo { bottom: 120px; right: 300px; }
+  label[for="avo"] { bottom: 140px; right: 290px; }
+
+  #tio { top: 70px; right: 450px; }
+  label[for="tio"] { top: 40px; right: 440px; }
+
+  #bicho { top: 400px; right: 250px; }
+  label[for="bicho"] { top: 380px; right: 240px; }
+
+  #magenta { bottom: 90px; left: 200px; width: 330px; }
+  label[for="magenta"] { bottom: 110px; left: 190px; }
+
+  #extraterrestre { top: 520px; left: 100px; width: 370px; }
+  label[for="extraterrestre"] { top: 500px; left: 90px; }
+
+  #espelho { bottom: 40px; right: 120px; width: 340px; }
+  label[for="espelho"] { bottom: 60px; right: 110px; }
+
+  #preta { top: 260px; right: 420px; width: 360px; }
+  label[for="preta"] { top: 230px; right: 410px; }
+</style>
+</head>
+<body>
+  <h1 class="xxl">FORMULÁRIO</h1>
+
+  <label for="nome" class="lg">Nome:</label>
+  <input id="nome" type="text">
+
+  <label for="sobrenome" class="sm">Sobrenome:</label>
+  <input id="sobrenome" type="text">
+
+  <label for="nascimento" class="xl">Data de Nascimento:</label>
+  <input id="nascimento" type="date">
+
+  <label for="telefone" class="xs">Telefone:</label>
+  <input id="telefone" type="tel">
+
+  <label for="comida" class="md">Comida Favorita:</label>
+  <input id="comida" type="text">
+
+  <label for="animal" class="xxl">Qual animal você imitaria para mendigar um desconto?</label>
+  <input id="animal" type="text">
+
+  <label for="avo" class="sm">Qual o nome da sua avó?</label>
+  <input id="avo" type="text">
+
+  <label for="tio" class="lg">Data de nascimento do tio (caso não tenha, problema dos seus avós!)</label>
+  <input id="tio" type="date">
+
+  <label for="bicho" class="md">Bicho de estimação:</label>
+  <input id="bicho" type="text">
+
+  <label for="magenta" class="lg">Qual o sabor da cor magenta?</label>
+  <input id="magenta" type="text">
+
+  <label for="extraterrestre" class="sm">Você acha que os extraterrestres usam crocs?</label>
+  <input id="extraterrestre" type="text">
+
+  <label for="espelho" class="xl">O espelho te vê ou só reflete seus traumas?</label>
+  <input id="espelho" type="text">
+
+  <label for="preta" class="lg">Quando você apaga a luz, a cor preta fica mais preta ou mais tímida?</label>
+  <input id="preta" type="text">
+
+  <button>ENVIAR</button>
+</body>
+</html>
