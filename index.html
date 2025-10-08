@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário Bagunçado</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Bagunçado</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1 class="xxl">FORMULÁRIO</h1>
-  <h2 class="xl">BAGUNÇADO</h2>
+    <h1 class="xxl">FORMULÁRIO</h1>
+    <h2 class="xl">BAGUNÇADO</h2>
 
-  <label for="nome" class="lg">Nome:</label>
-  <input id="nome" type="text">
+    <label for="nome" class="lg">Nome:</label>
+    <input id="nome" type="text">
 
-  <label for="sobrenome" class="sm">Sobrenome:</label>
-  <input id="sobrenome" type="text">
+    <label for="sobrenome" class="sm">Sobrenome:</label>
+    <input id="sobrenome" type="text">
 
-  <label for="nascimento" class="xl">Data de Nascimento:</label>
-  <input id="nascimento" type="date">
+    <div class="date-picker" id="datePicker">
+        <div class="date-dot" id="dateDot"></div>
+        <div class="date-text" id="dateText">19/06/2024</div>
+    </div>
+    <label for="nascimento" class="xl">Data de Nascimento:</label>
+    <input id="nascimento" type="date">
 
-  <label for="telefone" class="xs">Telefone:</label>
-  <input id="telefone" type="tel">
+    <label for="telefone" class="xs">Telefone:</label>
+    <input id="telefone" type="tel">
 
-  <label for="comida" class="md">Comida Favorita:</label>
-  <input id="comida" type="text">
+    <label for="comida" class="md">Comida Favorita:</label>
+    <input id="comida" type="text">
 
-  <label for="animal" class="xxl">Qual animal você imitaria para mendigar um desconto?</label>
-  <input id="animal" type="text">
+    <label for="animal" class="xxl">Qual animal você imitaria para mendigar um desconto?</label>
+    <input id="animal" type="text">
 
-  <label for="avo" class="sm">Qual o nome da sua avó?</label>
-  <input id="avo" type="text">
+    <label for="avo" class="sm">Qual o nome da sua avó?</label>
+    <input id="avo" type="text">
 
-  <label for="tio" class="lg">Data de nascimento do tio (caso não tenha, problema dos seus avós!)</label>
-  <input id="tio" type="date">
+    <label for="tio" class="lg">Data de nascimento do tio (caso não tenha, problema dos seus avós!)</label>
+    <input id="tio" type="date">
 
-  <label for="bicho" class="md">Bicho de estimação:</label>
-  <input id="bicho" type="text">
+    <label for="bicho" class="md">Bicho de estimação:</label>
+    <input id="bicho" type="text">
 
-  <label for="magenta" class="lg">Qual o sabor da cor magenta?</label>
-  <input id="magenta" type="text">
+    <label for="magenta" class="lg">Qual o sabor da cor magenta?</label>
+    <input id="magenta" type="text">
 
-  <label for="extraterrestre" class="sm">Você acha que os extraterrestres usam crocs?</label>
-  <input id="extraterrestre" type="text">
+    <label for="extraterrestre" class="sm">Você acha que os extraterrestres usam crocs?</label>
+    <input id="extraterrestre" type="text">
 
-  <label for="espelho" class="xl">O espelho te vê ou só reflete seus traumas?</label>
-  <input id="espelho" type="text">
+    <label for="espelho" class="xl">O espelho te vê ou só reflete seus traumas?</label>
+    <input id="espelho" type="text">
 
-  <label for="preta" class="lg">Quando você apaga a luz, a cor preta fica mais preta ou mais tímida?</label>
-  <input id="preta" type="text">
+    <label for="preta" class="lg">Quando você apaga a luz, a cor preta fica mais preta ou mais tímida?</label>
+    <input id="preta" type="text">
 
-  <button>ENVIAR</button>
+    <button>ENVIAR</button>
 </body>
+
+<script src="script.jsx"></script>
+
 </html>
