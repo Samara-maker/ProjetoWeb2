@@ -1,0 +1,151 @@
+/* CSS para recriar o visual da imagem */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 900px;
+    /* Limita a largura para não ficar muito esticado em telas grandes */
+    margin: auto;
+    /* Centraliza o conteúdo */
+}
+
+/* Estilo para links - cor azul padrão */
+a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551A8B;
+    /* Cor padrão para links visitados */
+}
+
+/* Cabeçalho */
+.header-promo {
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 2.5em;
+    /* Tamanho grande para "wepink" */
+    color: #d94c8b;
+    /* Tom de rosa */
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+/* Área da busca */
+.search-container {
+    border: 1px solid #888;
+    padding: 2px;
+    display: inline-flex;
+    /* Alinha o ícone e o campo de texto */
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    /* Remove a borda ao clicar */
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.search-container a {
+    padding: 0 5px;
+    font-size: 1.2em;
+}
+
+/* Ícones de usuário e carrinho */
+.user-actions {
+    margin-top: 15px;
+    font-size: 1.8em;
+    /* Aumenta o tamanho dos ícones */
+}
+
+.user-actions a {
+    text-decoration: none;
+    /* Remove o sublinhado dos ícones */
+    margin-right: 15px;
+}
+
+/* Container principal com duas colunas */
+.main-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    /* Espaço entre as colunas */
+}
+
+/* Coluna da esquerda (categorias) */
+.left-column {
+    flex: 1;
+    /* Ocupa metade do espaço */
+    border-left: 5px solid #d94c8b;
+    /* Barra rosa vertical */
+    padding-left: 15px;
+}
+
+.left-column ul {
+    list-style-type: none;
+    /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 5px;
+}
+
+/* Coluna da direita (termos buscados) */
+.right-column {
+    flex: 1;
+    /* Ocupa a outra metade */
+}
+
+.right-column h3 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+}
+
+.right-column ol {
+    padding-left: 20px;
+    /* Mantém a indentação da lista numerada */
+    margin: 0;
+}
+
+.right-column ol li {
+    margin-bottom: 5px;
+}
+
+
+/*IMAGEM DO LUAN*/
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* espaço entre as colunas */
+}
+
+.left-column, .right-column {
+  width: 25%;
+}
+
+.center-image {
+  display: flex;
+  justify-content: flex-start; /* antes era center */
+  align-items: center;
+  width: 50%;
+}
+
+.center-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 50px; /* controla o quanto encosta na esquerda */
+}

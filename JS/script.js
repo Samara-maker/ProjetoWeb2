@@ -75,3 +75,38 @@ window.addEventListener('mousemove', (e) => {
 });
 
 updateText();
+
+// PARTE DO TELEFONE
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('telefoneSlider');
+    const display = document.getElementById('telefoneDisplay');
+
+    slider.addEventListener('input', () => {
+        // valor do slider com 9 dígitos
+        let valor = slider.value.toString().padStart(9, '0');
+
+        // adiciona o dígito 9 na frente (números atuais no Brasil)
+        valor = '9' + valor;
+
+        // separa os blocos
+        const parte1 = valor.substring(0, 5); // 9 + 4 dígitos
+        const parte2 = valor.substring(5, 9); // últimos 4
+
+        // exibe no formato (69) 9XXXX-XXXX
+        display.textContent = `Phone: (69) ${parte1}-${parte2}`;
+    });
+});
+
+
+/*MUSICA */
+const btnMusica = document.getElementById('btnMusica');
+const musica = document.getElementById('musicaFundo');
+
+btnMusica.addEventListener('click', () => {
+    musica.play().then(() => {
+        btnMusica.style.display = 'none'; // esconde o botão depois
+    }).catch(erro => {
+        console.error("Erro ao tentar tocar a música:", erro);
+    });
+});

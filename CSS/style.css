@@ -116,8 +116,8 @@ label[for="nascimento"] {
 }
 
 label[for="telefone"] {
-    top: 50px;
-    right: 800px;
+    top: 5px;
+    right: 60px;
 }
 
 #comida {
@@ -252,4 +252,52 @@ label[for="preta"] {
     font-size: 18px;
     user-select: none;
 }
+
+.telefone-box {
+    position: absolute;
+    top: 80px;
+    right: 800px;
+}
+
+.telefone-mascara {
+    margin-top: 10px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 260px;
+    box-shadow: 2px 2px 0px #999;
+    font-family: monospace;
+}
+
+/*telefone modulo de arrastar*/
+
+.telefone-box {
+ 
+    border-radius: 6px;
+    padding: 20px;
+    width: 300px;
+}
+
+.telefone-mascara {
+    margin-top: 10px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+.telefone-mascara span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.telefone-slider {
+    width: 100%;
+    accent-color: #e64a19;
+    cursor: pointer;
+}
+
 
