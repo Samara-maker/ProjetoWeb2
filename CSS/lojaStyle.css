@@ -121,3 +121,31 @@ a:visited {
 .right-column ol li {
     margin-bottom: 5px;
 }
+
+
+/*IMAGEM DO LUAN*/
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* espaço entre as colunas */
+}
+
+.left-column, .right-column {
+  width: 25%;
+}
+
+.center-image {
+  display: flex;
+  justify-content: flex-start; /* antes era center */
+  align-items: center;
+  width: 50%;
+}
+
+.center-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 50px; /* controla o quanto encosta na esquerda */
+}
