@@ -1,0 +1,32 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte do texto para Poppins */
+    background-color: #f4f7f6;       
+    margin: 0;                         
+    display: flex;                    
+    justify-content: center;           
+    align-items: center;               
+    height: 100vh;                     
+    color: #333;                       /* Define a cor principal do texto como cinza escuro */
+}
+
+
+.welcome-container {
+    text-align: center;                
+    background-color: #ffffff;         
+    padding: 50px 60px;                /* Adiciona espaçamento interno (50px em cima/baixo, 60px nos lados) */
+    border-radius: 10px;               
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+
+h1 {
+    font-size: 2.5em;                  /* Aumenta o tamanho da fonte do título */
+    margin-bottom: 10px;               /* Adiciona um pequeno espaço abaixo do título */
+}
+
+
+p {
+    font-size: 1.1em;                  /* Define o tamanho da fonte do parágrafo */
+    color: #666;                       /* Define a cor do texto do parágrafo como cinza médio */
+    margin-bottom: 30px;               /* Adiciona um espaço maior abaixo do parágrafo */
+}

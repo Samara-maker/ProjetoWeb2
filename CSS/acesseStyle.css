@@ -1,5 +1,4 @@
-/* Prepara o corpo da página */
- body {
+body {
      margin: 0;
      background-color: #121212;
      height: 100vh;
@@ -14,14 +13,14 @@
      /* Remove o sublinhado padrão do link */
      text-decoration: none;
 
-     /* Define a cor do texto para o mesmo verde-limão chamativo */
+     /* Define a cor do texto */
      color: #39FF14;
 
      /* Adiciona uma transição suave para a mudança de cor ao passar o mouse */
      transition: color 0.3s ease;
  }
 
- /* Efeito opcional: faz o link brilhar mais ao passar o mouse por cima */
+ /* Faz o link brilhar mais ao passar o mouse por cima */
  a:hover {
      color: #ffffff;
      /* Muda a cor para branco */
@@ -45,12 +44,3 @@
      /* Remove a margem padrão do h1 para não afetar a centralização */
      margin: 0;
  }
-
- /*iframe {
-            border-radius: 12px;
-            width: 20%;
-            max-width: 380px;
-            height: 100px;
-            margin-top: -750px;
-            left: 500%;
-        }*/
